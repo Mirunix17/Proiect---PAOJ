@@ -33,7 +33,16 @@ public class Restaurant {
                 .orElse(0.0);
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
     public void addItem(MenuItem item) {
         menu.add(item);
     }
+
 }

@@ -14,6 +14,15 @@ public class MenuItem implements Comparable<MenuItem> {
 
     @Override
     public int compareTo(MenuItem other) {
-        return Double.compare(this.price, other.price);
+        int priceCompare = Double.compare(this.price, other.price);
+        if (priceCompare == 0) {
+            return this.name.compareTo(other.name);
+        }
+        return priceCompare;
+    }
+
+    @Override
+    public String toString() {
+        return name + " - " + price + " RON";
     }
 }

@@ -8,5 +8,13 @@ public class Driver extends User {
         this.carNumber = carNumber;
     }
 
+    public void setCarNumber(String carNumber) {
+        this.carNumber = carNumber;
+    }
+
+    public void setName(String newName) {
+        this.name = newName;
+    }
+
     public String getCarNumber() { return carNumber; }
 }
